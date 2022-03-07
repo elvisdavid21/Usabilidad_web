@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel=StyleSheet href="css/styles.css" type="text/css">
+    <link rel=StyleSheet href="css/contacto.css" type="text/css">
+    <script language="JavaScript" type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.PNG" alt="logo UEB">
+        <nav class="navegation">
+            <div class="topHeader">
+                <div>
+                    <input type="text" placeholder="Buscar">
+                </div>
+                <div class="iconos">
+                    <a href="#"><img src="img/youtube.png" alt="youtube" width="29px" height="27px"></a>                                
+                    <a href="#"><img src="img/instagram.png" alt="instagram"></a>                                
+                    <a href="#"><img src="img/twitter.png" alt="twitter"></a>                                
+                    <a href="#"><img src="img/facebook.png" alt="facebook"></a>                                                     
+                </div>       
+            </div>
+            
+            <ul class="navegationLinks">
+                <li>
+                    <a class="linkNavegacion" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="linkNavegacion" href="oferta.html">Oferta académica</a>
+                </li>
+                <li>
+                    <a class="linkNavegacion" href="#">Investigación</a>
+                </li>
+                <li>
+                    <a class="linkNavegacion" href="#">Servicios</a>
+                </li>
+                <li>
+                    <a class="linkNavegacion activate" href="contactanos.html">Contáctanos</a>
+                </li>                
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!---Sección superior con Breadcum, tamaño fuente e info -->
+    <div class="superior">
+        <ul class="breadcrumb">
+            <li><a href="contactanos.html">Contáctanos</a></li>                 
+        </ul>
+        <div class="accesibilityBar">        
+            <div class="botones">
+                <button class="boton">A +</button>
+                <button class="boton">A -</button>
+            </div>     
+            <a href='javascript:;' onclick="informacion()"><img src="img/help2.png" alt="icono ayuda" width="37" height="37"></a>         
+        </div>
+    </div>
+
+    <div class="titulo">
+        <h1>Contáctanos</h1>
+    </div>
+
+    <!-- Contenido Contacto -->
+    <div class="contenidoContacto">
+        <a href="https://www.google.com.ec/maps/place/Universidad+Estatal+de+Bolívar/@-1.5710248,-79.0105681,16.61z/data=!4m5!3m4!1s0x91d316085da1f499:0x1ce14b998d6b7583!8m2!3d-1.5711162!4d-79.0072775?hl=es">
+            <img src="img/mapa.PNG" alt="imagen mapa UEB" width="80%">
+        </a>
+        <form class="formulario" action="#" method="get">
+            <div class="subform">
+                <p><label for="nombre">Nombre *</label><br>
+                    <input type="text" name="nombre" id="nombre" size="20">
+                </p>
+                <p><label for="apellido">Apellido *</label><br>
+                    <input type="text" name="apellido" id="apellido" size="20">
+                </p>
+            </div>
+            <div class="subform">
+                <p><label for="correo">Correo *</label><br>
+                    <input type="text" name="correo" id="correo" size="20">
+                </p>
+                <p><label for="telefono">Teléfono *</label><br>
+                    <input type="text" name="telefono" id="telefono" size="20">
+                </p>
+            </div>
+           <div class="subform">
+            <p><label for="telefono">Mensaje *</label><br>
+                <textarea id="w3review" name="w3review" rows="4" cols="50">                
+                </textarea>
+            </p>
+           </div>            
+            <p class="botonEnviar">
+              <input class="boton" type="submit" value="Enviar" onclick="mensajeEnviado()">            
+            </p>
+          </form>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <p>Universidad Estatal de Bolívar</p>
+        </div>
+        <div class="contactos">        
+            <p>uni_est_bolivar@gmail.com </p>
+            <p>Bolivar  Guaranda, Ecuador</p>
+            <p>(06) 30 - 10 - 913</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

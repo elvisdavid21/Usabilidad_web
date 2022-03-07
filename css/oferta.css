@@ -1,0 +1,18 @@
+.contenidoPregrado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.tarjetaFacultad{
+    display: flex;
+}
+
+.contenidoTarjeta{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

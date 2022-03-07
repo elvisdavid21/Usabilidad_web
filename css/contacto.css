@@ -1,0 +1,39 @@
+:root{
+    --azul: #002171;
+    --amarillo: #fffb02;
+    --blanco: #ffffff;
+    --rojo: #FB3538;
+    --negro: #000000;
+    --celeste: #F2FBFF;
+}
+
+.contenidoContacto{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 10%;
+}
+
+.formulario{
+    color: var(--negro);
+    background-color: var(--celeste);
+    width: 450px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid var(--azul);
+    border-radius: 25px;
+
+}
+
+.subform{
+    display: flex;
+    justify-content: space-around;
+}
+.botonEnviar{
+    display: flex;
+    justify-content: center;
+}

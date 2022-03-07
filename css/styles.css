@@ -1,0 +1,263 @@
+:root{
+    --azul: #002171;
+    --amarillo: #fffb02;
+    --blanco: #ffffff;
+    --rojo: #FB3538;
+    --negro: #000000;
+    --celeste: #F2FBFF;
+}
+
+* {
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    /*color: white;*/
+}
+html{
+min-height: 100%;
+  position: relative;
+}
+
+@font-face {
+    font-family: fuenteMontserrat;
+    font-style: normal;
+    src: url(../fonts/Montserrat-Bold.otf);
+}
+
+
+@font-face {
+    font-family: fuenteParrafos;
+    font-style: normal;
+    src: url(../fonts/sf-ui-display-light.otf);
+}
+
+body{
+    margin: 0 0 0 0;
+    margin-bottom: 200px;
+    font-family: fuenteParrafos;
+    /*color: hsl(0, 1%, 36%);*/
+}
+
+header {
+    color: var(--blanco);
+    border: 1px solid var(--azul);
+    font-family: fuenteMontserrat;
+    background-color: var(--azul);
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul{
+    list-style: none;
+}
+
+.navegation{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.navegationLinks{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 22px;
+}
+
+.linkNavegacion{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.topHeader{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom: 12px;
+    height: 25%; 
+}
+
+.iconos{
+    display: flex;
+    width: 26%;
+    justify-content: space-between;
+}
+
+.activate{
+    width: 140%;
+    height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--rojo);
+    border-radius: 25px;    
+}
+
+
+
+
+/* BreadCrumb Style */
+ul.breadcrumb {
+    padding: 5px 5px;
+    list-style: none;
+    background-color: var(--blanco);
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: var(--negro);
+    content: ">";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: var(--azul);
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/*Titulo*/
+h1{
+    color: var(--rojo);
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+/* Sección botones e icono ayuda */
+.boton{
+    color: var(--blanco);
+    background-color: var(--azul);
+    border-radius: 20px;
+    font-size: 18px;
+}
+.superior{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.accesibilityBar{
+    width: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Imagen*/
+
+/*Secciones*/
+.contenido{
+    /*border: 1px solid gray;*/
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+.secciones{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+}
+.seccion{
+    text-decoration: none;
+    background-color: #F2FBFF;
+    color: var(--negro);
+    font-size: 30px;
+    display: flex;
+    border: 1px solid var(--azul);
+    width: 300px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Noticias */ 
+.noticias{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticia{
+    border: 1px solid gray;
+    color: var(--negro);  
+    margin: 5px 25px 5px 15px;
+    padding-top: 10px;
+}
+.titulo{
+    color: var(--negro);
+    font-weight: bold; 
+    display: flex;
+    text-decoration: none;
+    margin-left: 15px;    
+}
+.autor{
+    margin-left: 10px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textAutor{
+    color: var(--negro); 
+}
+
+.escritoPor{
+    color: var(--azul);
+    font-weight: bold;  
+}
+
+.fecha{
+    color: var(--azul); 
+}
+
+/* Footer */
+.contactos{
+    display: flex;
+    bottom: 0;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+
+.footer{
+    color: var(--blanco);
+    position: absolute;
+    width: 100%;
+    height: 95px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul);
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
